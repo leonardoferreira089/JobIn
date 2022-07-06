@@ -5,9 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="InputModels\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Services\" />
+    <Folder Include="Services\Implementations\" />
   </ItemGroup>
 
 </Project>

@@ -31,7 +31,7 @@ namespace JobIn.Core.Entities
         public int IdCandidate { get; private set; }
         public double Salary { get; private set; }
         public DateTime CreatedAt { get; private set; }
-        public StatusJob Status { get; private set; }
+        public StatusJob Status { get; private set; } = StatusJob.Submitted;
         public List<JobComment> JobComments { get; private set; }
 
         public void InReviewMode()
@@ -63,10 +63,6 @@ namespace JobIn.Core.Entities
             JobTitle = jobTitle;
             JobDescription = jobDescription;
             Salary = salary;
-
         }
-
-        //inreview - accepted - notapproved - update
-
     }
 }

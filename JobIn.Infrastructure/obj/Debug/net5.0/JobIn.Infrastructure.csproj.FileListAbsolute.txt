@@ -1,0 +1,15 @@
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Infrastructure.deps.json
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Infrastructure.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\ref\JobIn.Infrastructure.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Infrastructure.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Core.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.AssemblyInfo.cs
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.csproj.CopyComplete
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\ref\JobIn.Infrastructure.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.pdb

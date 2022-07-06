@@ -1,0 +1,12 @@
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\bin\Debug\net5.0\JobIn.Core.deps.json
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\bin\Debug\net5.0\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\bin\Debug\net5.0\ref\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\bin\Debug\net5.0\JobIn.Core.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.csproj.AssemblyReference.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.AssemblyInfoInputs.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.AssemblyInfo.cs
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\ref\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Core\obj\Debug\net5.0\JobIn.Core.pdb
