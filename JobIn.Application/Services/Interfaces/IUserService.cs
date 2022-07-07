@@ -11,6 +11,6 @@ namespace JobIn.Application.Services.Interfaces
     public interface IUserService
     {
         Task<UserViewModel> GetUser(int id);
-        Task<int> Create(CreateUserInputModel inputModel);
+        Task<int> CreateUser(CreateUserInputModel inputModel);
     }
 }
