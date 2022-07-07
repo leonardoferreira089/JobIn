@@ -1,3 +1,6 @@
+using JobIn.Application.Services.Implementations;
+using JobIn.Application.Services.Interfaces;
+using JobIn.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -19,6 +22,8 @@ namespace JobIn.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<JobInDbContext>();
+            services.AddScoped<IJobService, JobService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

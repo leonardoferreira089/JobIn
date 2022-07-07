@@ -8,12 +8,14 @@ namespace JobIn.Application.ViewModels
 {
     public class GetAllJobsViewModel
     {
-        public GetAllJobsViewModel(string jobTitle, DateTime createdAt)
+        public GetAllJobsViewModel(int id, string jobTitle, DateTime createdAt)
         {
+            Id = id;
             JobTitle = jobTitle;
             CreatedAt = createdAt;
         }
 
+        public int Id { get; private set; }
         public string JobTitle { get; private set; }
         public DateTime CreatedAt { get; private set; }
     }

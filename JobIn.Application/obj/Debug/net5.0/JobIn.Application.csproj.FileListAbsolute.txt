@@ -10,3 +10,8 @@ C:\Users\Usuário\source\repos\JobIn\JobIn.Application\obj\Debug\net5.0\JobIn.Ap
 C:\Users\Usuário\source\repos\JobIn\JobIn.Application\obj\Debug\net5.0\JobIn.Application.dll
 C:\Users\Usuário\source\repos\JobIn\JobIn.Application\obj\Debug\net5.0\ref\JobIn.Application.dll
 C:\Users\Usuário\source\repos\JobIn\JobIn.Application\obj\Debug\net5.0\JobIn.Application.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Application\bin\Debug\net5.0\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Application\bin\Debug\net5.0\JobIn.Infrastructure.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.Application\bin\Debug\net5.0\JobIn.Infrastructure.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Application\bin\Debug\net5.0\JobIn.Core.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Application\obj\Debug\net5.0\JobIn.Application.csproj.CopyComplete

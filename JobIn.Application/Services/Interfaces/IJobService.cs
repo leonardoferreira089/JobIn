@@ -11,7 +11,7 @@ namespace JobIn.Application.Services.Interfaces
     public interface IJobService 
     {
         Task<List<GetAllJobsViewModel>> GetAllJobs();
-        Task<List<GetJobByIdViewModel>> GetJobById(int id);
+        Task<GetJobByIdViewModel> GetJobById(int id);
         Task<int> CreateJob(CreateJobInputModel inputModel);        
         void UpdateJob(UpdateJobInputModel inputModel);
         void CreateJobComment(CreateJobCommentInputModel inputModel);
@@ -19,9 +19,5 @@ namespace JobIn.Application.Services.Interfaces
         void InReviewMode(int id);
         void Accepted(int id);
         void NotApproved(int id);
-        
-
-
-
     }
 }

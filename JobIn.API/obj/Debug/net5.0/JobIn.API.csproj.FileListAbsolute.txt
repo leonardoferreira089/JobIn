@@ -27,3 +27,13 @@ C:\Users\Usuário\source\repos\JobIn\JobIn.API\obj\Debug\net5.0\JobIn.API.dll
 C:\Users\Usuário\source\repos\JobIn\JobIn.API\obj\Debug\net5.0\ref\JobIn.API.dll
 C:\Users\Usuário\source\repos\JobIn\JobIn.API\obj\Debug\net5.0\JobIn.API.pdb
 C:\Users\Usuário\source\repos\JobIn\JobIn.API\obj\Debug\net5.0\JobIn.API.genruntimeconfig.cache
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\JobIn.Application.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\JobIn.Core.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\JobIn.Infrastructure.dll
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\JobIn.Application.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\JobIn.Core.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.API\bin\Debug\net5.0\JobIn.Infrastructure.pdb
