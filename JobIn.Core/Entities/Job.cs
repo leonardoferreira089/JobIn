@@ -28,7 +28,9 @@ namespace JobIn.Core.Entities
         public string JobTitle { get; private set; }
         public string JobDescription { get; private set; }
         public int IdCompany { get; private set; }
+        public User Company { get; private set; }
         public int IdCandidate { get; private set; }
+        public User Candidate { get; private set }
         public double Salary { get; private set; }
         public DateTime CreatedAt { get; private set; }
         public StatusJob Status { get; private set; } = StatusJob.Submitted;
