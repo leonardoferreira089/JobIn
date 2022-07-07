@@ -25,6 +25,7 @@ namespace JobIn.API
             services.AddSingleton<JobInDbContext>();
             services.AddScoped<IJobService, JobService>();
             services.AddScoped<IUserService, UserService>();
+            services.AddScoped<ICompetenceService, CompetenceService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
