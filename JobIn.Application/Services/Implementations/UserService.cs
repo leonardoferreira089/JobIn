@@ -25,6 +25,7 @@ namespace JobIn.Application.Services.Implementations
             var user = new User(inputModel.Name, inputModel.Email, inputModel.BirthDate, inputModel.Password);
 
             await _context.AddAsync(user);
+            await _context.SaveChangesAsync();
 
             return user.Id;
         }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace JobIn.API.Controllers
 {
-    [Route("api/jobs")]
+    [Route("api/[controller]")]    
     public class JobsController : ControllerBase
     {
         private readonly IJobService _service;
@@ -25,7 +25,7 @@ namespace JobIn.API.Controllers
             return Ok(jobs);
         }
 
-        [HttpGet]
+        [HttpGet("{id}/job")]
         public async Task<IActionResult> GetJobById(int id)
         {
             var job = await _service.GetJobById(id);
@@ -53,6 +53,8 @@ namespace JobIn.API.Controllers
             {
                 return BadRequest();
             }
+
+            _service.UpdateJob(inputModel);
 
             return NoContent();
         }

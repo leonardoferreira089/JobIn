@@ -31,9 +31,11 @@ namespace JobIn.Application.Services.Implementations
 
         public async Task<GetJobByIdViewModel> GetJobById(int id)
         {
-            var getJob = await _context.Jobs.SingleOrDefaultAsync(j => j.Id == id);
+            var getJob = await _context.Jobs.Include(getJob => getJob.Company)
+                .Include(getJob => getJob.Candidate)
+                .SingleOrDefaultAsync(j => j.Id == id);
 
-            var getJobViewModel = new GetJobByIdViewModel(getJob.Id, getJob.JobTitle, getJob.JobDescription, getJob.Salary);
+            var getJobViewModel = new GetJobByIdViewModel(getJob.Id, getJob.JobTitle, getJob.JobDescription, getJob.Salary, getJob.Company.Name, getJob.Candidate.Name);
 
             return getJobViewModel;
         }
@@ -56,6 +58,8 @@ namespace JobIn.Application.Services.Implementations
         {
             var job = _context.Jobs.SingleOrDefault(j => j.Id == inputModel.Id);
             job.Update(job.JobTitle, job.JobDescription, job.Salary);
+
+            _context.SaveChangesAsync();
         }
 
         public void CreateJobComment(CreateJobCommentInputModel inputModel)
@@ -63,6 +67,8 @@ namespace JobIn.Application.Services.Implementations
             var comment = new JobComment(inputModel.Content, inputModel.IdJob, inputModel.IdUser);
 
             _context.JobComments.Add(comment);
+
+            _context.SaveChangesAsync();
         }
 
         public void Accepted(int id)
@@ -70,6 +76,8 @@ namespace JobIn.Application.Services.Implementations
             var job = _context.Jobs.SingleOrDefault(j => j.Id == id);
 
             job.Accepted();
+
+            _context.SaveChangesAsync();
         }
 
         public void InReviewMode(int id)
@@ -77,6 +85,8 @@ namespace JobIn.Application.Services.Implementations
             var job = _context.Jobs.SingleOrDefault(j => j.Id == id);
 
             job.InReviewMode();
+
+            _context.SaveChangesAsync();
         }
 
         public void NotApproved(int id)
@@ -84,6 +94,8 @@ namespace JobIn.Application.Services.Implementations
             var job = _context.Jobs.SingleOrDefault(j => j.Id == id);
 
             job.NotApproved();
+
+            _context.SaveChangesAsync();
         }
 
         public void RemoveJob(int id)
@@ -91,6 +103,8 @@ namespace JobIn.Application.Services.Implementations
             var job = _context.Jobs.SingleOrDefault(j => j.Id == id);
 
             _context.Remove(job);
+
+            _context.SaveChangesAsync();
         }
     }
 }

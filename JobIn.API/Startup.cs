@@ -3,6 +3,7 @@ using JobIn.Application.Services.Interfaces;
 using JobIn.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,7 +23,10 @@ namespace JobIn.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<JobInDbContext>();
+            var connectionString = Configuration.GetConnectionString("JobInCs");
+            services.AddDbContext<JobInDbContext>(options => options.UseSqlServer(connectionString));            
+
+
             services.AddScoped<IJobService, JobService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<ICompetenceService, CompetenceService>();

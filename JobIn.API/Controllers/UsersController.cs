@@ -25,6 +25,7 @@ namespace JobIn.API.Controllers
             return Ok(user);
         }
 
+        [HttpPost]
         public async Task<IActionResult> CreateUser(CreateUserInputModel inputModel)
         {
             var user = await _service.CreateUser(inputModel);

@@ -19,7 +19,7 @@ namespace JobIn.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCompetences()
         {
-            var comp = _service.GetAllCompetences();
+            var comp = await _service.GetAllCompetences();
 
             return Ok(comp);
         }

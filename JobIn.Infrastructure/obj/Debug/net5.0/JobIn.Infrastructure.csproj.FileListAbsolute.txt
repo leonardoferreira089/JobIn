@@ -13,3 +13,6 @@ C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn
 C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.dll
 C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\ref\JobIn.Infrastructure.dll
 C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.pdb
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Infrastructure.runtimeconfig.json
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\bin\Debug\net5.0\JobIn.Infrastructure.runtimeconfig.dev.json
+C:\Users\Usuário\source\repos\JobIn\JobIn.Infrastructure\obj\Debug\net5.0\JobIn.Infrastructure.genruntimeconfig.cache
