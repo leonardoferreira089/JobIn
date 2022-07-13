@@ -57,7 +57,8 @@ namespace JobIn.Application.Services.Implementations
         public void UpdateJob(UpdateJobInputModel inputModel)
         {
             var job = _context.Jobs.SingleOrDefault(j => j.Id == inputModel.Id);
-            job.Update(job.JobTitle, job.JobDescription, job.Salary);
+
+            job.UpdateJob(inputModel.JobTitle, inputModel.JobDescription, inputModel.Salary);
 
             _context.SaveChangesAsync();
         }

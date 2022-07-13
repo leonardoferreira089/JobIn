@@ -60,7 +60,7 @@ namespace JobIn.Core.Entities
             }
         }
 
-        public void Update(string jobTitle, string jobDescription, double salary)
+        public void UpdateJob(string jobTitle, string jobDescription, double salary)
         {
             JobTitle = jobTitle;
             JobDescription = jobDescription;

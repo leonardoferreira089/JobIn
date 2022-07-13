@@ -20,6 +20,7 @@ namespace JobIn.Infrastructure.Persistence
         public DbSet<User> Users { get; set; }
         public DbSet<Competence> Competences { get; set; }
         public DbSet<JobComment> JobComments { get; set; }
+        public DbSet<UserCompetence> UserCompetences { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

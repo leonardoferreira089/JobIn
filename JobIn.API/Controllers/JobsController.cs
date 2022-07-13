@@ -25,7 +25,7 @@ namespace JobIn.API.Controllers
             return Ok(jobs);
         }
 
-        [HttpGet("{id}/job")]
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetJobById(int id)
         {
             var job = await _service.GetJobById(id);
@@ -34,27 +34,27 @@ namespace JobIn.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateJob(CreateJobInputModel inputModel)
+        public async Task<IActionResult> CreateJob([FromBody]CreateJobInputModel inputModel)
         {
             if(inputModel.JobTitle.Length > 60)
             {
                 return BadRequest();
             }
 
-            var jobId = await _service.CreateJob(inputModel);
+            var id = await _service.CreateJob(inputModel);
 
-            return CreatedAtAction(nameof(GetJobById), new { jobId }, inputModel);
+            return CreatedAtAction(nameof(GetJobById), new { id }, inputModel);
         }
 
         [HttpPut("{id}")]
         public IActionResult UpdateJob(int id, [FromBody] UpdateJobInputModel inputModel)
         {
-            if (inputModel.JobTitle.Length > 60)
+            if (inputModel.JobTitle.Length < 4)
             {
                 return BadRequest();
             }
-
-            _service.UpdateJob(inputModel);
+            
+            _service.UpdateJob(inputModel);            
 
             return NoContent();
         }
@@ -67,12 +67,12 @@ namespace JobIn.API.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}/delete")]
+        [HttpDelete("id")]
         public IActionResult DeleteJob(int id)
         {
             _service.RemoveJob(id);
 
-            return RedirectToAction(nameof(GetAllJobs));
+            return NoContent();
         }
 
         [HttpPut("{id}/in-review")]
